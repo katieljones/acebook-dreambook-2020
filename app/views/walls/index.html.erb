@@ -8,10 +8,6 @@
  <%= render 'form' %>
  </div>
 
-<div class="message_form_on_wall"
- <%= render 'form' %>
-</div>
-
  <% @posts.reverse.each do |post| %>
    </br>
    <div class='post'>
@@ -43,7 +39,6 @@
      <% @post = post %>
      <%= render post.comments %>
 
-     <h4>Add a comment:</h4>
      <%= render 'comments/form' %>
 
    </div>
