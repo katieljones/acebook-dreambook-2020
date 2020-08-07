@@ -4,11 +4,8 @@
  <%= button_to "Logout", logout_path, method: :delete, class: "buttons" %>
  </div>
  <%= button_to "Posts", '/posts', method: :get, class: "posts-button" %>
+ 
  <div class = 'post'>
- <%= render 'form' %>
- </div>
-
- <div class="message_form_on_wall"
  <%= render 'form' %>
  </div>
 
@@ -32,8 +29,6 @@
 
      <% @post = post %>
      <%= render post.comments %>
-
-     <h4>Add a comment:</h4>
      <%= render 'comments/form' %>
    </div>
    <div class="like_button">
