@@ -5,8 +5,8 @@
  </div>
  <%= button_to "Posts", '/posts', method: :get, class: "posts-button" %>
  
- <div class = 'post'>
- <%= render 'form' %>
+ <div class ='newpost'>
+  <%= render 'form' %>
  </div>
 
  <% @posts.reverse.each do |post| %>

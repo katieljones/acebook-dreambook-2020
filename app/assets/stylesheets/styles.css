@@ -199,6 +199,22 @@ body {
 
 }
 
+.newpost {
+  margin-left: 30%;
+  margin-right: 30%;
+  /* text-align: center; */
+  max-width: 700px;
+  /* position: relative; */
+  background-color: #709fb0;
+  border-style: solid;
+  border-color: #709fb0;
+  border-radius: 50px;
+}
+
+.textnewpost {
+  margin-left: 0%;
+}
+
 .comment {
   border-radius: 12px;
   border: solid;

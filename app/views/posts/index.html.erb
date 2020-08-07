@@ -3,8 +3,8 @@
  <%= button_to "Logout", logout_path, method: :delete, class: "logout-button" %>
  <%= button_to "My Wall", '/walls', method: :get, class: "mywall-button" %>
 
- <div class ='post'>
- <%= render 'form' %>
+ <div class ='newpost'>
+  <%= render 'form' %>
  </div>
 
   <% @posts.reverse.each do |post| %>
