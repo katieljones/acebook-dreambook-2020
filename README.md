@@ -150,11 +150,3 @@ https://sheltered-sands-59716.herokuapp.com/
 ```
 $ rails server
 ```
-
-
-**Additional Functionality**
-----
- - Allow comments on posts
- - Improve CSS
- - User Profiles with Avatars 
- - Allow posts to have upload file function
