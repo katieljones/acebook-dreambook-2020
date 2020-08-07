@@ -111,6 +111,28 @@ position: relative;
   font-size: 16px;
   padding: 5px 10px;
 }
+
+.mywall-button {
+  margin-top: 3.55%;
+  margin-right: 0.55%;
+  position:fixed; top:0; right:0;
+  border-radius: 12px;
+  background-color: #a0c1b8;
+  z-index: 1;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+.posts-button {
+  margin-top: 3.55%;
+  margin-right: 0.55%;
+  position:fixed; top:0; right:0;
+  border-radius: 12px;
+  background-color: #a0c1b8;
+  z-index: 1;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
 .wall_logout_button {
   margin-left: 43.2%;
   margin-right: 40%;
