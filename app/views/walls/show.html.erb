@@ -3,7 +3,6 @@
  <div class="wall_logout_button"
  <%= button_to "Logout", logout_path, method: :delete, class: "buttons" %>
  </div>
- <%= button_to "My Wall", '/walls', method: :get, class: "mywall-button" %>
  <%= button_to "Posts", '/posts', method: :get, class: "posts-button" %>
  <div class = 'post'>
  <%= render 'form' %>
