@@ -42,12 +42,12 @@
 
 
  <% end %>
+ <div class='wall'>
  <% @walls.each do |wall| %>
   </br>
-  <div class='wall'>
-      <h4><%= link_to wall.user.username, wall_path(wall) %></h4>
-  </div>
+    <h4><%= link_to wall.user.username, wall_path(wall) %></h4>
   <% end %>
+  </div>
 
   <% def time_ago_in_words(from_time, include_seconds_or_options = {})
     distance_of_time_in_words(from_time, Time.now, include_seconds_or_options)

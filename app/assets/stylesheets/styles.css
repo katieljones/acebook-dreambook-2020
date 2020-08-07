@@ -73,6 +73,16 @@ position: relative;
   border-radius: 50px;
 }
 
+.wall {
+  text-align: center;
+  position:fixed; top:200px; left:20px;
+  border-style: solid;
+  background-color: #a0c1b8;
+  border-color: #a0c1b8;
+  border-radius: 12px;
+  width: 200px;
+}
+
 .message_form_on_wall {
   border: solid;
   border-color: #709fb0;
