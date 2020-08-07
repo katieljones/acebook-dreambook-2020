@@ -21,4 +21,5 @@ RSpec.feature "Edit ", type: :feature do
   #   @post.save
   #   expect(page).not_to have_link("Edit")
   # end
+
 end
