@@ -12,17 +12,15 @@ class SessionsController < ApplicationController
        session[:user_id] = @user.id
        redirect_to '/walls'
     else
-        @error = "Sorry, please try again"
-        p !@error.nil?
-       render 'welcome'
+      @error = "Sorry, please try again"
+      render 'welcome'
     end
   end
 
   def logout
-    p @user
     session.delete(:user_id)
     @user = nil
-    p @user
+
   end
 
   def destroy

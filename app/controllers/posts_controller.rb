@@ -26,8 +26,6 @@ class PostsController < ApplicationController
 
     # @post.wall_id = current_user.id
     'This is the create method'
-    p @post.wall_id
-    p @post
     if @post.save
       redirect_back(fallback_location: root_path)
     else
@@ -54,9 +52,10 @@ class PostsController < ApplicationController
 
   def destroy
     @post = Post.find(params[:id])
+    # if @post.user_id == current_user.id
     if @post.user_id == session[:user_id]
-    @post.destroy
-    redirect_to posts_path
+      @post.destroy
+      redirect_to posts_path
     end
   end
 

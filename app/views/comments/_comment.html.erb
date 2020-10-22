@@ -1,8 +1,10 @@
 <div class='comment'>
-<p>
-  <%= comment.user.username %> said <%= comment.body %>
-  <%= link_to 'Delete Comment', [comment.post, comment],
-               method: :delete,
-               data: { confirm: 'Are you sure?' } %>
-</p>
+  <p>
+    <%= comment.user.username %> said <%= comment.body %>
+      <% if comment.user_id == current_user.id %>
+        <%= link_to 'Delete Comment', [comment.post, comment],
+                method: :delete,
+                data: { confirm: 'Are you sure?' } %>
+      <% end %>
+  </p>
 </div>

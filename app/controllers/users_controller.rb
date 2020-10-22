@@ -12,7 +12,7 @@ class UsersController < ApplicationController
       @wall = Wall.new(:user_id => @user.id, :id => @user.id)
       @wall.save
       @walls = Wall.all
-      p @walls
+      
       redirect_to '/'
     else
       render 'new'
